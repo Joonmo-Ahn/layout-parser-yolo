@@ -1,0 +1,37 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb.tmp
+
+# Editors / env
+.vscode/
+.idea/
+.env
+.venv/
+*.env
+
+# Model artifacts and large exports
+*.pt
+*.onnx
+*.engine
+*.pth
+train/**/weights/
+runs/
+
+# Generated visuals / logs / temp
+result.png
+*.log
+*.csv
+*.jpg
+*.png
+
+# Local data mounts
+data/
+data_*/
+*.tar
+*.zip
+
