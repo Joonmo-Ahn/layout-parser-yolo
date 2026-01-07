@@ -1,42 +1,3 @@
-<<<<<<< HEAD
-# Byte-compiled / cache
-__pycache__/
-*.py[cod]
-*.pyo
-
-# Jupyter
-.ipynb_checkpoints/
-*.ipynb.tmp
-
-# Editors / env
-.vscode/
-.idea/
-.env
-.venv/
-*.env
-
-# Model artifacts and large exports
-*.pt
-*.onnx
-*.engine
-*.pth
-train/**/weights/
-runs/
-
-# Generated visuals / logs / temp
-result.png
-*.log
-*.csv
-*.jpg
-*.png
-
-# Local data mounts
-data/
-data_*/
-*.tar
-*.zip
-
-=======
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
@@ -244,4 +205,32 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
->>>>>>> da8f2da414deaf24673339e045502546c8c01ea3
+
+# --- Project-specific ignores (YOLO layout parsing) ---
+# Large notebooks (avoid GitHub 100MB limit)
+yolo11_홍루몽.ipynb
+
+# Jupyter checkpoints/temp
+.ipynb_checkpoints/
+*.ipynb.tmp
+
+# Model artifacts and exports
+*.pt
+*.onnx
+*.engine
+*.pth
+train/**/weights/
+runs/
+
+# Generated outputs / logs
+result.png
+*.log
+*.csv
+*.jpg
+*.png
+
+# Local data mounts and archives
+data/
+data_*/
+*.tar
+*.zip
