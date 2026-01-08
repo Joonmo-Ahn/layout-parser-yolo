@@ -16,7 +16,7 @@ YOLOv11n 로 학습 (약 50여장) 이미지의 레이아웃을 학습했습니�
 - `train/` : 학습 산출물(가중치) 보관 디렉터리
 
 ## 환경 준비
-### Docker (cuda12.2)
+### Docker (cuda 12.2)
 ```bash
 docker pull pytorch/pytorch:2.4.0-cuda12.1-cudnn9-runtime
 docker run --gpus all --shm-size 32gb --ipc=host --name ocr_api_layout \
@@ -28,6 +28,8 @@ docker run --gpus all --shm-size 32gb --ipc=host --name ocr_api_layout \
 필수 패키지 예시:
 ```bash
 pip install ultralytics fastapi uvicorn opencv-python pillow matplotlib tqdm requests
+# cuda 12.4
+uv pip install torch-tensorrt tensorrt --extra-index-url https://download.pytorch.org/whl/cu124
 ```
 PyTorch는 CUDA 12.x 지원 빌드를 사용하세요.
 
