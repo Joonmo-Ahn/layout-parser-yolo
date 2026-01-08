@@ -1,5 +1,6 @@
 # 홍루몽 YOLO Layout Parser
-Ultralytics YOLOv8 기반으로 홍루몽 고서 이미지의 레이아웃(G1/G2/G3)을 추출하는 프로젝트입니다. 간단한 추론 스크립트와 FastAPI 엔드포인트로 서비스화할 수 있도록 구성되었습니다.
+Ultralytics YOLOv11 기반으로 홍루몽 고서 이미지의 레이아웃(G1/G2/G3)을 추출하는 프로젝트입니다. 간단한 추론 스크립트와 FastAPI 엔드포인트로 서비스화할 수 있도록 구성되었습니다.
+YOLOv11n 로 학습 (약 50여장) 이미지의 레이아웃을 학습했습니다.
 
 - FastAPI + API Key(`x-api-key`) 인증, `GET /layout` 엔드포인트 제공
 - YOLO 추론 결과에서 중첩 박스 제거 후 2배 확장하여 실제 인쇄 영역과 비슷하게 보정
